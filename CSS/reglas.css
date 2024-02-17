@@ -1,0 +1,90 @@
+.reglas
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: Tomato;
+    color: #fff;
+    padding: 20px;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.reglas.reglasActivado
+{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.reglas .titulo
+{
+    padding: 25px;
+}
+
+.reglas .titulo .divisor_reglas
+{
+    width: 40%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.reglas p
+{
+    padding: 25px;
+    font-size: 18px;
+    background-color: rgb(241, 80, 52);
+}
+
+.reglas .botones_reglas
+{
+    text-align: right;
+}
+
+.botones_reglas button
+{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(201, 33, 3);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botones_reglas .salir
+{
+    border: 1px solid rgb(201, 33, 3) ;
+    background-color: rgb(233, 145, 129);
+}
+
+.botones_reglas .salir:hover
+{
+    background-color: rgb(201, 33, 3);
+}
+
+.botones_reglas button:hover
+{
+    width: 99px;
+    height: 29px;
+    font-size: 17.5px;
+}
+
+/********************************** RESPONSIVE ***************************************/
+
+@media (max-width: 720px)
+{
+    .reglas
+    {
+        position: fixed;
+        width: 90%;
+    }
+}

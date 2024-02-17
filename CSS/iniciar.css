@@ -1,0 +1,27 @@
+.iniciar
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iniciar button
+{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: Tomato;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+}
+
+.iniciar button:hover
+{
+    width: 149px;
+    height: 39px;
+    font-size: 17.5px;
+}

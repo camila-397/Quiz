@@ -1,0 +1,63 @@
+.resultado
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    width: 600px;
+    padding: 25px;
+    border: 2px solid DodgerBlue;
+    border-radius: 10px;
+    text-align: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.resultado.resultadoActivado
+{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.resultado img
+{
+    width: 250px;
+    height: 200px;
+}
+
+.resultado .score_texto
+{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.resultado .botones_resulta
+{
+    margin-top: 25px;
+}
+
+.botones_resulta button
+{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: DodgerBlue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botones_resulta button:hover
+{
+    width: 149px;
+    height: 29px;
+    font-size: 17.5px;
+}

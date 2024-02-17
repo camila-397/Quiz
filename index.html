@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4380b6d3aa.js" crossorigin="anonymous"></script>
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="./CSS/generales.css">
+    <link rel="stylesheet" href="./CSS/iniciar.css">
+    <link rel="stylesheet" href="./CSS/reglas.css">
+    <link rel="stylesheet" href="./CSS/quiz.css">
+    <link rel="stylesheet" href="./CSS/resultado.css">
+
+</head>
+<body>
+
+    <div class="iniciar">
+        <button><b>Iniciar el Quiz</b></button>
+    </div>
+
+    <div class="reglas">
+
+        <div class="titulo">
+            <h2>Reglas del Quiz</h2>
+            <div class="divisor_reglas"></div>
+        </div>
+
+        <p>
+            1. Sólo dispondrá de <b>15 segundos</b> por cada pregunta. <br><br>
+            2. Una vez seleccionada la respuesta, no se puede deshacer. <br><br>
+            3. No podrás seleccionar ninguna opción una vez transcurrido el tiempo. <br><br>
+            4. No puedes salir del Quiz mientras estás jugando <br><br>
+            5. Obtendrás puntos en función de tus respuestas correctas.
+        </p>
+
+        <div class="botones_reglas">
+            <button class="salir"><b>Salir</b></button>
+            <button class="continuar"><b>Continuar</b></button>
+        </div>
+
+    </div>
+
+    <div class="quiz">
+        
+        <div class="header">
+
+            <div class="titulo_quiz">
+                <h1>Preguntas</h1>
+            </div>
+
+            <div class="tiempo">
+                <div class="tiempo_rest"> <b>Tiempo Restante:</b> </div>
+                <div class="tiempo_seg"> <b></b> </div>
+            </div>
+
+        </div>
+
+        <div class="dividor_quiz"></div>
+
+        <div class="preguntas">
+
+            <div class="pregunta">
+                <!--
+                    <h3>Pregunta N</h3>
+                -->
+            </div>
+
+            <div class="opciones">
+
+                <!--
+                    <div class="opcion">
+                    <p> Opcion #1</p>
+                    <div><i class="fa-solid fa-xmark"></i></div>
+                </div>
+
+                <div class="opcion">
+                    <p> Opcion #2</p>
+                    <div><i class="fa-solid fa-check"></i></div>
+                </div>
+
+                <div class="opcion">
+                    <p> Opcion #3</p>
+                </div>
+
+                <div class="opcion">
+                    <p> Opcion #4</p>
+                </div> 
+                -->
+
+            </div>
+
+        </div>
+
+        <div class="dividor_quiz"></div>
+
+
+        <div class="footer">
+            <div class="total">
+                <!--
+                    <p>1 <b>/</b> N</p>
+                -->
+            </div>
+
+            <button class="siguiente"><b>Siguiente Pregunta</b></button>
+        </div>
+
+    </div>
+
+
+    <div class="resultado">
+
+        <img src="./IMG/finalizado.jpg" alt="">
+
+        <div class="titulo_resultado">
+            <h1>Has completado el quiz!!</h1>
+        </div>
+
+        <div class="score_texto">
+        
+            <!--
+                <p> Has acertado <span><b>n</b></span> preguntas de <span><b>n</b></span></p>
+            -->
+            
+        </div>
+
+        <div class="botones_resulta">
+            <button class="salir"><b>Salir</b></button>
+        </div>
+
+    </div>
+
+
+<script src="./JS/preguntas.js"></script>
+<script src="./JS/quizApp.js"></script>    
+</body>
+</html>
